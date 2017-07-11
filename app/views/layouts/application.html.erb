@@ -6,28 +6,41 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
   </head>
   <body>
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+    <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
+
+      <a class="navbar-brand" href="#">
+
+        <%= image_tag("image.png", alt: "logo", size: 30, class: 'd-inline-block align-top') %>
+        Universal HR Solutions
+      </a>
+
+
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-    <a class="navbar-brand" href="#">TWelker</a>
 
-    <div class="collapse navbar-collapse justify-content-end" id="nav-content">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">List</a>
-        </li>
-      </ul>
-      </nav>
+
+
+
+
+      <div class="collapse navbar-collapse justify-content-end" id="nav-content">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Client List</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
 
     <%= yield %>
