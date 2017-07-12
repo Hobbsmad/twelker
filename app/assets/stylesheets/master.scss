@@ -57,21 +57,6 @@ body {
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
-.card-img-top {
-  background: image_url('work.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 130px;
-  box-shadow: 0px 3px 8px #2a2a2a;
-  font-weight: 200;
-  width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-  color: white;
-}
 
 .card2 {
   background: image_url('note.png');
@@ -106,7 +91,5 @@ body {
 }
 
 .card {
-  font-family: "Helvetica Neue", Helvetica;
-  font-weight: 200;
-  box-shadow: 0px 1px 3px #2a2a2a;
+  margin-bottom: 10px;
 }
