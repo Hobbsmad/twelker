@@ -17,7 +17,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 280px;
+  padding-bottom: 25px;
   box-shadow: 0px 3px 8px #2a2a2a;
 }
 
@@ -87,6 +87,11 @@ body {
 }
 
 .bottom-feature {
-  background-color: black;
+  background: image_url('hero.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #2e3440;
   padding-top: 10px;
 }
