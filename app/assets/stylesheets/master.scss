@@ -100,6 +100,8 @@ body {
   height: 200px;
 }
 
-.feature {
-  
+@media all and (-ms-hi-contrast: none), (-ms-hi-contast: active) {
+  .feature {
+    width: 100%;
+  }
 }
