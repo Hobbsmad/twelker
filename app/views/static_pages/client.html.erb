@@ -3,9 +3,15 @@
   <div class="card">
     <div class="card-block">
       <p class="card-text">
-        <h3>Client List</h3>
-       ----------------------
-        <div style="text-align: left; padding: 10px;">
+        <div class="hero">
+          <br />
+          <div class="frosty col-8 offset-2 text-center">
+            <br />
+            <h3>Client List<h3>
+          </div>
+        </div>
+        <br />
+        <div style="text-align: left; padding: 5px;">
           <ul>
             <h3>Iowa</h3>
             -----------
@@ -45,14 +51,21 @@
               --------------------
               <li>General Physics</li>
           </ul>
-          <br />
-          <div style="text-align: left; padding: 10px;">
-            <h3>Want to learn more? Contact us!</h3>
-            <br />
-          ----> <%= link_to 'Contact', contact_url, class: 'btn btn-primary' %>
-          </div>
        </p>
      </div>
     </div>
   </div>
+
+   <div class="footer">
+     <div class="container">
+       <div class="row">
+          <div class="col-6">
+            <%= link_to 'Want to learn more? Contact us!', contact_url, class: 'next-quote' %>
+          </div>
+          <div class="col-6 footer-blurb">
+            'Proudly built in Iowa by Madelyn Hobbs and her father Jason Hobbs'<br />
+          </div>
+       </div>
+     </div>
+   </div>
 </div>
