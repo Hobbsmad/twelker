@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <style media="screen" type="text/css">
+      <cdata>
+
+        h3 { color: #f00; }
+        ul { list-style: none; }
+
+      </cdata>
+    </style>
+  </head>
+  <body style="background-color: #FAFAFA">
+    <div>
+      <h1 style="text-align: center; color: #1f77b5;">
+        <%= link_to "Universalhr.org", root_url, :style => "color: #1f77b5; text-decoration: none; font-weight: bold;" %>
+      </h1>
+    </div>
+    <div style="border-color: #1f77b5; margin-bottom: 20px; background-color: #fff; border: 1px solid #1f77b5; border-radius: 4px; -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.07); box-shadow: 0 2px 2px rgba(0,0,0,0.07);">
+      <div style="color: #333333; background-color: #1f77b5; border-color: #1f77b5; padding: 10px 15px; border-bottom: 1px solid transparent; border-top-right-radius: 3px; border-top-left-radius: 3px;">
+        <h3 style="margin-top: 0; margin-bottom: 0; font-size: 16px; color: #fff;">
+          <%= "New Contact form was sent by " + @name %>
+        </h3>
+      </div>
+      <div style="padding: 10px 15px; border-top: 1px solid #ddd;">
+        <p>
+          <%= "Name: " + @name %><br>
+          <%= "Title: " + @title %><br>
+          <%= "Email: " + @email %>
+        </p>
+        <p>
+          <%= "Message: " + @subject %>
+        </p>
+      </div>
+    </div>
+    <h3 style="text-align: center;">
+      *** This is an automatically generated email, please do not reply ***
+    </h3>
+  </body>
+</html>
