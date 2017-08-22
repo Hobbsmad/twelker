@@ -1,20 +1,9 @@
 <div class="container">
-  <form action="/action_page.php">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="tname">Title/Position</label>
-    <input type="text" id="tname" name="title" placeholder="Your title..">
-
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Your email..">
-    <br />
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Some brief information about the problem or scope of work..." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
+  <%= bootstrap_form_tag url: '/static_pages/contactemail' do |f| %>
+    <%= f.text_field :name, placeholder: 'John Doe' %>
+    <%= f.text_field :title, placeholder: 'HR Manager' %>
+    <%= f.email_field :email, placeholder: 'name@example.com' %>
+    <%= f.text_area :subject, rows: 10, placeholder: 'Some brief information about the problem or scope of work...' %>
+    <%= f.submit "Send" %>
+  <% end %>
 </div>

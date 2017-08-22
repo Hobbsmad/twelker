@@ -10,4 +10,8 @@ class StaticPagesController < ApplicationController
 
   def client
   end
+
+  def contactemail
+
+  end
 end
