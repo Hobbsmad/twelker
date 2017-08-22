@@ -4,6 +4,6 @@ class ContactusMailer < ApplicationMailer
     @title = title
     @name = name
     @subject = subject
-    mail(to: 'info@universalhr.org', subject: 'Contact Request')
+    mail(to: 'jason.hobbs@digisanctum.com', subject: 'Contact Request')
   end
 end
