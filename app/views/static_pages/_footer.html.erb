@@ -4,9 +4,10 @@
        <div class="col-6">
          <% if controller_name == 'static_pages' && action_name == 'contact' %>
           General Information:
-          <li>Cell Number: (515) 444-76996</li>
           <li>Business: (515) 261-1778</li>
+          <li>Cell Number: (515) 444-76996</li>
           <li>Company Mailing Address: 4405 163rd Street Urbandale, Iowa 50323</li>
+          <li>Company Email Address: info@universalhr.org</li>
          <% else %>
           <%= link_to 'Want to learn more? Contact us!', contact_url, class: 'next-quote' %>
          <% end %>
