@@ -161,7 +161,11 @@ body {
   font-style: italic;
 }
 
-h2 {
+#indentonly {
+  margin-left: 50px;
+}
+
+#indent {
   font-size: 20px;
   color: #498bf4;
   text-indent: -50px;
@@ -169,6 +173,10 @@ h2 {
 
 h3 {
   font-size: 35px;
+}
+
+#blue {
+  color: #498bf4;
 }
 
 h4 {
