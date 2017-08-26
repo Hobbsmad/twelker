@@ -1,11 +1,11 @@
 <div class="container">
   <%= bootstrap_form_tag url: '/static_pages/contactemail' do |f| %>
-    <%= f.text_field :name, placeholder: 'John Doe' %>
-    <%= f.text_field :title, placeholder: 'HR Manager' %>
-    <%= f.text_field :company, placeholder: 'Company Name' %>
-    <%= f.phone_field :phone, placeholder: '(515) 123-4567' %>
-    <%= f.email_field :email, placeholder: 'name@example.com' %>
-    <%= f.text_area :subject, rows: 10, placeholder: 'Some brief information about the problem or scope of work...' %>
+    <%= f.text_field :name, placeholder: 'John Doe', value: @name %>
+    <%= f.text_field :title, placeholder: 'HR Manager', value: @title %>
+    <%= f.text_field :company, placeholder: 'Company Name', value: @company %>
+    <%= f.phone_field :phone, placeholder: '(515) 123-4567', value: @phone %>
+    <%= f.email_field :email, placeholder: 'name@example.com', value: @email %>
+    <%= f.text_area :subject, rows: 10, placeholder: 'Some brief information about the problem or scope of work...', value: @subject %>
     <%= f.submit "Send" %>
   <% end %>
 </div>
