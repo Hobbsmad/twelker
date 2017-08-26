@@ -1,19 +1,21 @@
 <div class="footer">
   <div class="container">
     <div class="row">
-       <div class="col-6">
+       <div class="col-5">
          <% if controller_name == 'static_pages' && action_name == 'contact' %>
           General Information:
           <li>Business: (515) 261-1778</li>
           <li>Cell Number: (515) 444-76996</li>
-          <li>Company Mailing Address: 4405 163rd Street Urbandale, Iowa 50323</li>
           <li>Company Email Address: info@universalhr.org</li>
+        </div>
          <% else %>
           <%= link_to 'Want to learn more? Contact us!', contact_url, class: 'next-quote' %>
          <% end %>
-       </div>
-       <div class="col-6 footer-blurb">
-         'Proudly built in Iowa by Madelyn Hobbs and her father Jason Hobbs'<br />
+       <div class="col-7">
+         <% if controller_name == 'static_pages' && action_name == 'contact' %>
+          <br>
+          <li>Company Mailing Address: 4405 163rd Street Urbandale, Iowa 50323</li>
+         <% end %>
        </div>
     </div>
   </div>
