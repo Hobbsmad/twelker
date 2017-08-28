@@ -1,4 +1,7 @@
 <div class="container">
+  <h1 id='rh'>Please fill out the boxes below</h1>
+  <h2 id='r'>Once complete, a partner will contact you within 24 hours.</h2>
+<br />
   <%= bootstrap_form_tag url: '/static_pages/contactemail' do |f| %>
     <%= f.text_field :name, placeholder: 'John Doe', value: @name %>
     <%= f.text_field :title, placeholder: 'HR Manager', value: @title %>
