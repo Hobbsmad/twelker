@@ -17,7 +17,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 290px;
+  padding-bottom: 25px;
   box-shadow: 0px 3px 8px #2a2a2a;
 }
 
@@ -41,8 +41,16 @@ h1, h2, h3, h4, h5, h6, .navbar {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 200;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
-  font-size: 25px;
+  font-size: 15px;
 }
+
+.frosty h3 {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+  text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+  font-size: 45px;
+}
+
 
 .btn {
   border-radius: 0;
@@ -59,45 +67,158 @@ body {
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
-
-.card2 {
-  background: image_url('note.png');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 120px;
-  box-shadow: 0px 3px 8px #2a2a2a;
-  font-weight: 200;
-  width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-  color: #000000;
-}
-
-.card3 {
-  background: image_url('pen.png');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 120px;
-  box-shadow: 0px 3px 8px #2a2a2a;
-  font-weight: 200;
-  width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-  color: black;
-}
-
 .card {
   margin-bottom: 10px;
+  box-shadow: 0px 3px 8px #2a2a2a;
+  background-clip: content-box;
 }
 
 .feature {
     width: unset;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.bottom-feature {
+  background: image_url('hero.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #2e3440;
+  padding-top: 10px;
+}
+
+.img-fluid {
+  height: 200px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 16px;
+    box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+html {
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 20px;
+}
+.footer {
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+
+.next-quote {
+  color: black;
+  font-family: 'nobilemedium_italic', sans-serif;
+  font-size:20px;
+}
+
+.slogan {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;
+  padding-top: 26px;
+}
+
+.footer-blurb {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;
+}
+
+#indentonly {
+  margin-left: 50px;
+}
+
+#indent {
+  font-size: 20px;
+  color: #498bf4;
+  text-indent: -50px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+#blue {
+  color: #498bf4;
+}
+
+#box {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+  text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+  font-size: 45px;
+
+}
+
+#q {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;
+  font-size: 15px;
+}
+
+#b {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+  text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+  font-size: 25px;
+}
+
+#l {
+  font-size: 15px;
+}
+
+#rounded {
+  border-radius: 5px;
+  margin-top: 70px;
+}
+
+#bold {
+font-size: 25px;
+}
+
+#r {
+  font-size: 20px;
+  text-indent: 200px;
+}
+
+#rh {
+  font-size: 25px;
+  text-indent: 300px;
 }
